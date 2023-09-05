@@ -2,3 +2,189 @@
     margin: 0px;
     padding: 0px;
 }
+
+section {
+    padding: 2rem 9%;
+}
+
+.home {
+    border: 0px solid;
+    display: flex;
+    justify-content: center;
+    background: url('/images/img1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.home .content {
+    text-align: center;
+    border: 0px solid;
+    width: 60rem;
+}
+
+.home .content h3 {
+    color: black;
+    font-size: 3rem;
+
+}
+
+.home .content h3 {
+    color: black;
+    font-size: 3rem;
+
+}
+
+.home .content h3 span {
+    color: green;
+}
+
+.home .content p {
+    color: light color;
+    font-size: 1.7rem;
+}
+
+h1{
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1rem;
+}
+.btn {
+    border: .2rem solid black;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .5rem .3rem;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    color: black;
+    cursor: pointer;
+    background-color: none;
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    background: green;
+    color: #ffff;
+}
+
+
+/* footer */
+
+.footer {
+    background: #fff;
+}
+
+.footer .box-container {
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.8rem;
+    color: black;
+    padding: .5rem 0;
+}
+
+.footer .box-container .box h3 i {
+    color: green;
+}
+
+.footer .box-container .box .links {
+    display: block;
+    font-size: 1.1rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+    color: green;
+    padding-right: .3rem;
+}
+
+.footer .box-container .box a:hover {
+    padding-right: 1.5rem;
+}
+
+
+.footer .box-container .box p {
+    line-height: 1.1;
+    font-size: 1.1rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+    border: 0px solid;
+    height: 3rem;
+    width: 3rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: black;
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: green;
+    color: #fff;
+
+}
+
+.footer .box-container .box .email {
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.1rem;
+    color: black;
+    text-transform: none;
+}
+
+.footer .box-container .box .payment-img {
+    margin-top: 2rem;
+    height: 3rem;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    font-size: 1.1rem;
+    color: black;
+    border-top: 2px;
+}
+
+.footer .credit span {
+    color: green;
+}
+
+
+@media(max-width:991px) {
+    section {
+        padding: 2rem;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .footer {
+        text-align: center;
+
+    }
+}
