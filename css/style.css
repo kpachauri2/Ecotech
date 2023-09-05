@@ -7,6 +7,22 @@ section {
     padding: 2rem 9%;
 }
 
+
+#profileImage {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border-radius: 50%; /* Create a circular profile image */
+    background-image: url('/images/icon.png'); /* Replace 'profile-image.jpg' with your image file path */
+    background-size: cover; /* Adjust the image sizing as needed */
+    background-repeat: no-repeat; 
+}
+.nav-item.ms-auto .input-group .btn-link {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
 .home {
     border: 0px solid;
     display: flex;
@@ -16,6 +32,7 @@ section {
     background-size: cover;
     padding-top: 17rem;
     padding-bottom: 10rem;
+    
 }
 
 .home .content {
