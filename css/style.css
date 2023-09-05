@@ -3,9 +3,7 @@
     padding: 0px;
 }
 
-section {
-    padding: 2rem 9%;
-}
+
 
 
 #profileImage {
@@ -21,6 +19,32 @@ section {
     margin-bottom: auto;
 }
 
+/* general css */
+
+.button {
+    border: .2rem solid black;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .5rem .3rem;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    color: black;
+    cursor: pointer;
+    background-color: none;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background: green;
+    color: #ffff;
+}
+
+/* home section css */
+
+section {
+    padding: 2rem 9%;
+}
 
 
 .home {
@@ -43,15 +67,11 @@ section {
 
 .home .content h3 {
     color: black;
-    font-size: 3rem;
+    font-size: 1.8rem;
 
 }
 
-.home .content h3 {
-    color: black;
-    font-size: 3rem;
 
-}
 
 .home .content h3 span {
     color: green;
@@ -59,33 +79,62 @@ section {
 
 .home .content p {
     color: light color;
-    font-size: 1.7rem;
-}
-
-h1{
-    font-size: 1.8rem;
-}
-p{
     font-size: 1rem;
 }
-.btn {
-    border: .2rem solid black;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: .5rem .3rem;
-    font-size: 1.3rem;
-    border-radius: .5rem;
+
+/* educational part image gallery */
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* homepage */
+  .homepage {
+    border: 0px solid;
+    display: flex;
+    justify-content: center;
+    background: url('/images/img3.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    
+}
+
+.homepage .content {
+    text-align: center;
+    border: 0px solid;
+    width: 60rem;
+}
+
+.homepage .content h3 {
     color: black;
-    cursor: pointer;
-    background-color: none;
-    text-decoration: none;
+    font-size: 2rem;
 
 }
 
-.btn:hover {
-    background: green;
-    color: #ffff;
-}
+
+
+
+  
+
 
 
 /* footer */
