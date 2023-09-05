@@ -87,6 +87,63 @@ p{
     color: #ffff;
 }
 
+/* stats part  */
+
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for Important and Not Important */
+    gap: 10px; /* Gap between cells */
+}
+
+.cell {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.important-urgent {
+    background-color:#32CD32 ; /* Red for Important and Urgent */
+}
+
+.important-not-urgent {
+    background-color: #FFFF00; /* Yellow for Important but Not Urgent */
+}
+
+.not-important-urgent {
+    background-color: #FFA500; /* Orange for Urgent but Not Important */
+}
+
+.not-important-not-urgent {
+    background-color:#FF0000 ; /* Green for Neither Urgent nor Important */
+}
+
+/* Center text within cells */
+.center-text {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Style for the form input area */
+.form-input {
+    width: 100%;
+}
+/* Style for the task list */
+.task-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+}
+  
+
 
 /* footer */
 
