@@ -74,47 +74,6 @@
 
       <!-- nav bar code end  -->
 
-       <!-- stats section -->
-    <div class="container mt-5">
-        <form class id="task-form">
-            <div class="mb-3">
-                <label for="task-content" class="form-label">Task To-do</label>
-                <input type="text" class="form-control form-input" id="task-content" required>
-            </div>
-            <div class="mb-3">
-                <label for="task-category" class="form-label">Priority of task</label>
-                <select class="form-select form-input" id="task-category" required>
-                    <option value="important-urgent">Important & Urgent</option>
-                    <option value="important-not-urgent">Important & Not Urgent</option>
-                    <option value="not-important-urgent">Not Important & Urgent</option>
-                    <option value="not-important-not-urgent">Neither Urgent nor Important</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Add Task</button>
-        </form>
-        <div class="matrix">
-            <div class="cell important-urgent center-text">
-                <h3>Important & Urgent</h3>
-                <ul class="task-list" id="important-urgent-tasks"></ul>
-            </div>
-            <div class="cell important-not-urgent center-text">
-                <h3>Important & Not Urgent</h3>
-                <ul class="task-list" id="important-not-urgent-tasks"></ul>
-            </div>
-            <div class="cell not-important-urgent center-text">
-                <h3>Not Important & Urgent</h3>
-                <ul class="task-list" id="not-important-urgent-tasks"></ul>
-            </div>
-            <div class="cell not-important-not-urgent center-text">
-                <h3>Neither Urgent nor Important</h3>
-                <ul class="task-list" id="not-important-not-urgent-tasks"></ul>
-            </div>
-        </div>
-    </div>
-
-      
-
-    <!-- stats end -->
 
 
       <!-- home section -->
@@ -193,35 +152,9 @@
     });
     </script> -->
 
-    <!-- script for adding task  -->
+    
 
-    <script>
-        const taskForm = document.getElementById('task-form');
-
-        taskForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const taskContent = document.getElementById('task-content').value.trim();
-            const taskCategory = document.getElementById('task-category').value;
-
-            if (taskContent !== '') {
-                // Create a new task list item with a checkbox
-                const taskListItem = document.createElement('li');
-                taskListItem.className = 'task-list-item';
-                taskListItem.innerHTML = `
-                    <input type="checkbox" class="task-checkbox">
-                    <span>${taskContent}</span>
-                `;
-
-                // Append the task list item to the corresponding category's task list
-                document.getElementById(`${taskCategory}-tasks`).appendChild(taskListItem);
-
-                // Clear the input fields
-                document.getElementById('task-content').value = '';
-                document.getElementById('task-category').selectedIndex = 0;
-            }
-        });
-    </script>
+    
 
 
     
